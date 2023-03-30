@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <script>
+    function validateForm(){
+      //let x = document.forms["myForm"]["sname"].value;
+      let name= document.getElementById("name").value;
+      console.log(name);
+     // document.writeln(name);
+      //if (document.getElementById("name").value ==""){
+        if (name ==""){
+        confirm("......Name must be filled out..");
+        return false;
+      }
+    
+
+    //let x = document.forms["myForm"]["sname"].value;
+    let fname= document.getElementById("fname").value;
+      console.log(fname);
+     // document.writeln(fname);
+      //if (document.getElementById("fname").value ==""){
+        if (fname ==""){
+        confirm("......Father Name must be filled out..");
+        return false;
+      }
+
+
+    //let x = document.forms["myForm"]["sname"].value;
+    let mname= document.getElementById("mname").value;
+      console.log(mname);
+     // document.writeln(mname);
+      //if (document.getElementById("fname").value ==""){
+        if (mname ==""){
+   
+        confirm("...... Mother Name must be filled out..");
+        return false;
+      }
+
+      //let x = document.forms["myForm"]["sname"].value;
+      let rname= document.getElementById("rname").value;
+      console.log(rname);
+      if (rname ==""){
+        confirm("......Regster No must be filled out..");
+        return false;
+      }
+
+
+      document.writeln(name);
+      document.writeln(fname);
+      document.writeln(mame);
+      document.writeln(rame);
+    }
+      
+    
+  </script>
+    <center>
+    <h2><center>GOVERNMENT OF KARNATAKA </center></h2>
+    <h2><center>DEPARTMENT OF TECHNICAL EDUCATION</center></h2>
+    <h2><center>BOARD OF TECHNICL EXAMINATION</center></h2>
+        <form onsubmit="return validateForm()"
+        method="post" action="tq.html">
+        <label for="name">NAME :</label>&nbsp&nbsp&nbsp
+         <input type="text" id="name" minlength="3" maxlength="15"  placeholder="Enter your full name"></b>
+         <br><br>
+        <label for="name">FATHER NAME :</label>&nbsp&nbsp&nbsp
+         <input type="text" id="fname" minlength="3" maxlength="15" placeholder="Enter your father name"><br><br>
+         
+        <label for="name">MOTHER NAME :</label>&nbsp&nbsp&nbsp
+         <input type="text" id="mname" minlength="3" maxlength="15" placeholder="Enter your mother name"><br><br>
+     
+       <label for="name">REG NO :</label>
+         <input type="text" id="rname" minlength="3" maxlength="10" placeholder="Enter your Register number"><br><br>
+         
+       <label for="branch">SELECT BRANCH :</label><BR>
+         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" id="ce" name="new" value="CE">
+          <label for="html">CE</label><br>
+        
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" id="cs" name="new" value="CS">
+          <label for="html">CS</label><br>
+        
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" id="me" name="new" value="ME">
+          <label for="html">ME</label><br>
+       
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="radio" id="ec" name="new" value="EC">
+          <label for="html">EC</label><br><BR>
+       <dl>
+       <dt>
+       <label for="cars">SELECT SEMESTER :</label>
+       </dt>
+         <dd><select name="sem" id="sem">
+           <option value="sem">1st SEM</option>
+           <option value="sem">2nd SEM</option>
+           <option value="sem">3rd SEM</option>
+           <option value="sem">4th SEM</option>
+           <option value="sem">5th SEM</option>
+           <option value="sem">6th SEM</option>
+         </select></dd>
+         <br><br>
+        </center>
+<style>
+table, th, td {
+    border:1px solid black;
+  }
+  </style>
+  <body style="background-color:cornsilk">
+  
+  <h2><center>if "YES" give full exam deatils of current semester</center></h2>
+  
+  <table style="width:100%">
+    <tr>
+      <th style="color:red ;" rowspan="2">SEM</th>
+      <th style="color:red ;" colspan="8"><center>subject codes(to be filled by student)</center></th>
+      <th style="color:red ;" rowspan="2">Fees (office use)</th> 
+    </tr>
+    <tr>
+      <td style="color:red ;">01</td>
+      <td style="color:red ;">02</td>
+      <td style="color:red ;">03</td>
+      <td style="color:red ;">04</td>
+      <td style="color:red ;">05</td>
+      <td style="color:red ;">06</td>
+      <td style="color:red ;">07</td>
+      <td style="color:red ;">08</td>
+      <td> </td>
+    </tr>
+    <tr>
+        <td>&nbsp</td>
+        <td><input type="text" minlength="3" maxlength="7"></td>
+        <td><input type="text" minlength="3" maxlength="7"> </td>
+        <td><input type="text" minlength="3" maxlength="7"> </td>
+        <td><input type="text" minlength="3" maxlength="7"> </td>
+        <td><input type="text" minlength="3" maxlength="7"> </td>
+        <td><input type="text" minlength="3" maxlength="7"> </td>
+        <td><input type="text" minlength="3" maxlength="7"> </td>
+        <td><input type="text" minlength="3" maxlength="7"> </td>
+        <td><input type="text" minlength="3" maxlength="7"> </td>
+      </tr>
+   </table>
+   <br><br>
+   <center>
+   <label for="total amount">TOTAL AMOUNT :</label>&nbsp&nbsp&nbsp
+         <input type="text" id="total amount" minlength="1" maxlength="2" placeholder="Enter your amount">
+        </center>
+  <br><br>
+
+  <style>
+    table, th, td {
+        border:1px solid black;
+      }
+      </style>
+      <body>
+      
+      <h2><center>Part Exam: Give details of failed subjects in previouss semesters, if any ... </center></h2>
+      <table style="width:100%">
+        <tr>
+          <th style="color:red ;" rowspan="2">SEMESTER</th>
+          <th style="color:red ;" colspan="7"><center>subject codes(to be filled by student)</center></th>
+          <th style="color:red ;" rowspan="2">Fees (office use)</th> 
+        </tr>
+        <tr>
+          <td style="color:red ;">01</td>
+          <td style="color:red ;">02</td>
+          <td style="color:red ;">03</td>
+          <td style="color:red ;">04</td>
+          <td style="color:red ;">05</td>
+          <td style="color:red ;">06</td>
+          <td style="color:red ;">07</td>
+          <td> </td>
+        </tr>
+        <tr>
+            <td style="color:red ;">I</td>
+            <td><input type="text" minlength="3" maxlength="7"></td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+          </tr>
+          <tr>
+            <td style="color:red ;">II</td>
+            <td><input type="text" minlength="3" maxlength="7"></td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+          </tr>
+          <tr>
+            <td style="color:red ;">III</td>
+            <td><input type="text" minlength="3" maxlength="7"></td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+          </tr>
+          <tr>
+            <td style="color:red ;">IV</td>
+            <td><input type="text" minlength="3" maxlength="7"></td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+          </tr>
+          <tr>
+            <td style="color:red ;">V</td>
+            <td><input type="text" minlength="3" maxlength="7"></td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+          </tr>
+          <tr>
+            <td style="color:red ;">VI</td>
+            <td><input type="text" minlength="3" maxlength="7"></td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+            <td><input type="text" minlength="3" maxlength="7"> </td>
+          </tr>
+       </table>
+       <br><br>
+       <center>
+        <label for="total amount">TOTAL AMOUNT :</label>&nbsp&nbsp&nbsp
+              <input type="text" id="total amount" minlength="1" maxlength="3" placeholder="Enter your amount">
+             </center>
+       <p>** Fees to be calculated semester wise. if more than to subjects in any semester collect full fees</p>
+      <br>
+      
+    
+  <center>
+      <input type="submit" value="submit">
+    </center>
+  </form>
+
+</body>
+</html>

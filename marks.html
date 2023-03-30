@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        input[type=text]
+        {
+        padding: 9px 20px;
+        margin: 1px 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 1px solid blue;
+        background-color: whitesmoke;
+        }
+        </style>
+    <script>
+        function validateForm() {
+                       if (document.getElementById("t1").value == "") {
+              confirm("......Name must be filled out..");
+              return false;
+            }
+
+            if (document.getElementById("t2").value == "") {
+              confirm("......Reg must be filled out..");
+              return false;
+            }
+          }
+        function add()
+        {
+            var numOne,numTwo,sum;
+            numOne=parseInt(document.getElementById("first").value);
+            numTwo=parseInt(document.getElementById("second").value);
+            sum=numOne+numTwo;
+            document.getElementById("answer1").value = sum;
+
+            var numOne,numTwo,sum;
+            numOne=parseInt(document.getElementById("third").value);
+            numTwo=parseInt(document.getElementById("four").value);
+            sum=numOne+numTwo;
+            document.getElementById("answer2").value = sum;
+
+            var numOne,numTwo,sum;
+            numOne=parseInt(document.getElementById("five").value);
+            numTwo=parseInt(document.getElementById("six").value);
+            sum=numOne+numTwo;
+            document.getElementById("answer3").value = sum;
+
+            var numOne,numTwo,sum;
+            numOne=parseInt(document.getElementById("seven").value);
+            numTwo=parseInt(document.getElementById("eight").value);
+            sum=numOne+numTwo;
+            document.getElementById("answer4").value = sum;
+
+            var numOne,numTwo,sum;
+            numOne=parseInt(document.getElementById("nine").value);
+            numTwo=parseInt(document.getElementById("ten").value);
+            sum=numOne+numTwo;
+            document.getElementById("answer5").value = sum;
+
+            var numOne,numTwo,sum;
+            numOne=parseInt(document.getElementById("first").value);
+            numTwo=parseInt(document.getElementById("third").value);
+            numOne=parseInt(document.getElementById("five").value);
+            numTwo=parseInt(document.getElementById("seven").value);
+            numOne=parseInt(document.getElementById("nine").value);
+            sum=numOne+numTwo+numOne+numTwo+numOne;
+            document.getElementById("answer6").value = sum;
+            
+            var numOne,numTwo,sum;
+            numTwo=parseInt(document.getElementById("second").value);
+            numOne=parseInt(document.getElementById("four").value);
+            numTwo=parseInt(document.getElementById("six").value);
+            numOne=parseInt(document.getElementById("eight").value);
+            numTwo=parseInt(document.getElementById("ten").value);
+            sum=numOne+numTwo+numOne+numTwo+numOne;
+            document.getElementById("answer7").value = sum;
+
+            var numOne,numTwo,sum;
+            numTwo=parseInt(document.getElementById("answer1").value);
+            numOne=parseInt(document.getElementById("answer2").value);
+            numTwo=parseInt(document.getElementById("answer3").value);
+            numOne=parseInt(document.getElementById("answer4").value);
+            numTwo=parseInt(document.getElementById("answer5").value);
+            sum=numOne+numTwo+numOne+numTwo+numOne;
+            document.getElementById("answer8").value = sum;
+        }
+
+        function abc()
+        {
+            
+            if(document.getElementById("first").value=="" && document.getElementById("second").value=="" )
+                alert("required");
+            if(document.getElementById("first").value>40 || document.getElementById("second").value>60 )
+                alert("enter currect number.")
+            else
+            {
+                add();
+            }
+
+        }
+        
+            
+        
+    </script>
+    
+</head>
+    <body style="color: palevioletred;">
+        <center>
+            <h1><u>MARKS CARD</u></h1>
+        </center>
+    <form onsubmit="return validateForm()"
+    method="post" action="My_page.html">  
+                 
+    <label for="name"> NAME :  </label>       
+    <input type="text" id="t1" name="sname" placeholder="Enter Name" /> <br> <br>
+    <label> FATHER NAME : </label>       
+    <input type="text" name="fname" size="15" placeholder="Enter Name" /> <br> <br>
+    <label> MOTHER NAME : </label>       
+    <input type="text" name="name" size="15" placeholder="Enter Name"/> <br> <br>
+    <label> Reg No: </label>
+    <input type="text" id="t2" name="reg" placeholder="Enter Reg No" /><br><br>
+    
+        <style>
+            table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+            }
+        </style>
+            
+        <table style="width:100%">
+            <tr>
+              <th rowspan="2">sl.no</th>
+              <th rowspan="2">Op code and course</th>
+              <th colspan="3">externals</th>
+              <th colspan="2">internals</th>
+              <th colspan="3">total marks</th>
+              <th rowspan="2">course result</th>
+            </tr>
+          
+        <tr>
+            <th>max.marks </th>
+            <th>min.marks </th>
+            <th>marks obtained </th>
+            <th>max.marks </th>
+            <th>marks obtained </th>
+            <th>max.marks </th>
+            <th>min.marks </th>
+            <th>marks obtained </th>
+            
+
+        </tr>
+        <tr>
+            <th>01<br><br>02<br><br>03<br><br>04<br><br>05 </th>
+            <th><br>20CS41P-PYTHON<br><br>20CS42P-OPERATIVE SYSTEM <br>20CS43P-OOP AND DESIGN WITH JAVA<br>20CS44P-SOFTWARE ENGINEERING <br>20CS45T-INDIAN CONSTITUTION<br></th>
+            <th>40<br><br>40<br><br>40<br><br>40<br><br>-</th>
+            <th>16<br><br>16<br><br>16<br><br>16<br><br>-</th>
+            <th><input type="number" id="first"><br><br><input type="number" id="third"><br><br><input type="number" id="five"><br><br><input type="number" id="seven"><br><br><input type="number" id="nine"></th>
+            <th>60<br><br>60<br><br>60<br><br>60<br><br>50</th>
+            <th><input type="number" id="second" onblur="abc()" ><br><br><input type="number" id="four" onblur="abc()" ><br><br><input type="number" id="six" onblur="abc()"><br><br><input type="number" id="eight" onblur="abc()" onfocus="abd()"><br><br><input type="number" id="ten" onblur="abc()" ></th>
+            <th>100<br><br>100<br><br>100<br><br>100<br><br>50</th>
+            <th>40<br><br>40<br><br>40<br><br>40<br><br>20</th>
+            <th><input type="number" id="answer1"><br><br><input type="number" id="answer2" ><br><br><input type="number" id="answer3"><br><br><input type="number" id="answer4"><br><br><input type="number" id="answer5"></th>
+            <th><input type="text1"><br><br><input type="text1" ><br><br><input type="text1" ><br><br><input type="text1" ><br><br><input type="text1" ></th>
+        </tr>
+        <tr>
+            <th></th>
+            <th> GRAND TOTAL</th>
+            <th>160</th>
+            <th>64</th>
+            <th><input type="number" id="answer6"></th>
+            <th>290</th>
+            <th><input type="number" id="answer7"> </th>
+            <th>450</th>
+            <th>180</th>
+            <th><input type="number" id="answer8"></th>
+            <th><input type="text"></th>
+        </tr>
+        <tr>
+            <th colspan="11" align="left">Total in words:<input type="text" ></th>
+        </tr>
+        <tr>
+            <th colspan="11" align="left">Result:<input type="text"></th>
+        </tr>
+          </div>
+          </table><br><br>
+          <label for="sign" style="color: palevioletred">Signature :</label>
+          <input type="text" id="sign" name="sign" ><br>    
+          <input type="submit" value="submit">
+    </form>
+          
+          
+    </body>
+</html>
